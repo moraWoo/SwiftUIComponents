@@ -4,23 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftUI_Components",
+    name: "SwiftUIComponents",
     platforms: [
         .iOS(.v16),
-        .macOS(.v13)
+        .macOS(.v13),
     ],
     products: [
         .library(
-            name: "SwiftUI_Components",
-            targets: ["SwiftUI_Components"]),
+            name: "SwiftUIComponents",
+            targets: ["SwiftUIComponents"])
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "SwiftUI_Components",
+            name: "SwiftUIComponents",
             dependencies: []),
         .testTarget(
-            name: "SwiftUI_ComponentsTests",
-            dependencies: ["SwiftUI_Components"]),
+            name: "SwiftUIComponentsTests",
+            dependencies: ["SwiftUIComponents"]),
     ]
 )
